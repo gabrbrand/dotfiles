@@ -386,21 +386,25 @@ globalkeys = gears.table.join(
     awful.key({}, "Print", function () awful.util.spawn("scrot") end,
               {description = "take screenshot", group = "screenshot"}),
 
+    -- Mute
+    awful.key({}, "XF86AudioMute", function () awful.util.spawn("amixer set Master toggle") end,
+              {description = "mute", group = "volume"}),
+
     -- Decrease volume
-    awful.key({}, "#122", function () awful.util.spawn("amixer set 'Master' 5%-") end,
-              {description = "Decrease volume", group = "volume"}),
+    awful.key({}, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 5%-") end,
+              {description = "decrease volume", group = "volume"}),
 
     -- Increase volume
-    awful.key({}, "#123", function () awful.util.spawn("amixer set 'Master' 5%+") end,
-              {description = "Increase volume", group = "volume"}),
+    awful.key({}, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 5%+") end,
+              {description = "increase volume", group = "volume"}),
 
     -- Decrease brightness
-    awful.key({}, "#232", function () awful.util.spawn("light -U 5") end,
-              {description = "Decrease brightness", group = "brightness"}),
+    awful.key({}, "XF86MonBrightnessDown", function () awful.util.spawn("light -U 5") end,
+              {description = "decrease brightness", group = "brightness"}),
       
     -- Increase brightness
-    awful.key({}, "#233", function () awful.util.spawn("light -A 5") end,
-              {description = "Increase brightness", group = "brightness"}),
+    awful.key({}, "XF86MonBrightnessUp", function () awful.util.spawn("light -A 5") end,
+              {description = "increase brightness", group = "brightness"}),
 
     awful.key({ modkey }, "x",
               function ()
@@ -656,4 +660,4 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 awful.spawn.with_shell("xrandr --output eDP --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output VGA-0 --off --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal")
 
 -- Set wallpaper
-awful.spawn.with_shell("nitrogen --restore")
+awful.spawn.with_shell("nitrogen --set-tiled ~/.config/bg.png")
