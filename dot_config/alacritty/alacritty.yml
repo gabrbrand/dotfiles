@@ -188,16 +188,9 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-# Colors (Tomorrow Night)
-
-# Basic Zenburn Color Scheme - Colors cribbed from the putty version https://gist.github.com/danidiaz/88406bf002009fd97454
-# Dimmed colors needed
-
+# Colors (Zenburn)
 colors:
   # Default colors
-  #primary:
-  #  background: '#1d1f21'
-  #  foreground: '#c5c8c6'
   primary:
     background: '#333333'
     foreground: '#ffffff'
@@ -208,8 +201,6 @@ colors:
     # present. If the bright foreground color is not set, or
     # `draw_bold_text_with_bright_colors` is `false`, the normal foreground
     # color will be used.
-    #dim_foreground: '#828482'
-    #bright_foreground: '#eaeaea'
     bright_foreground: '#ffffff'
     bright_background: '#555555'
 
@@ -219,9 +210,6 @@ colors:
   #
   # Allowed values are CellForeground/CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
   cursor:
     text:    '#000000'
     cursor:  '#00ff00'
@@ -292,15 +280,6 @@ colors:
   #  background: CellForeground
 
   # Normal colors
-  #normal:
-  #  black:   '#1d1f21'
-  #  red:     '#cc6666'
-  #  green:   '#b5bd68'
-  #  yellow:  '#f0c674'
-  #  blue:    '#81a2be'
-  #  magenta: '#b294bb'
-  #  cyan:    '#8abeb7'
-  #  white:   '#c5c8c6'
   normal:
     black:   '#4d4d4d'
     red:     '#bb0000'
@@ -312,15 +291,6 @@ colors:
     white:   '#f5deb3'
 
   # Bright colors
-  #bright:
-  #  black:   '#666666'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0b1'
-  #  white:   '#eaeaea'
   bright:
     black:   '#555555'
     red:     '#ff5555'

@@ -362,13 +362,13 @@ globalkeys = gears.table.join(
               end,
               {description = "restore minimized", group = "client"}),
 
-    -- Rofi
-    awful.key({ "Control" }, "space", function () awful.util.spawn("rofi -show drun") end,
-              {description = "run rofi", group = "launcher"}),
-
     -- Prompt
     awful.key({ modkey }, "r", function () awful.util.spawn("rofi -show run") end,
               {description = "run prompt", group = "launcher"}),
+
+    -- Menubar
+    awful.key({	modkey }, "p", function() awful.util.spawn("rofi -show drun") end,
+              {description = "show the menubar", group = "launcher"}),
 
     -- Thunar 
     awful.key({ modkey }, "+", function () awful.util.spawn("thunar") end,
@@ -415,10 +415,7 @@ globalkeys = gears.table.join(
                     history_path = awful.util.get_cache_dir() .. "/history_eval"
                   }
               end,
-              {description = "lua execute prompt", group = "awesome"}),
-    -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+              {description = "lua execute prompt", group = "awesome"})
 )
 
 clientkeys = gears.table.join(
