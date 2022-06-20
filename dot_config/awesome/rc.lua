@@ -653,6 +653,9 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
+-- Gaps
+beautiful.useless_gap = 5
+
 -- Set screen layout
 awful.spawn.with_shell("xrandr --output eDP --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output VGA-0 --off --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal")
 
