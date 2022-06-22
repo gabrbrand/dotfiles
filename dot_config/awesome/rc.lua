@@ -653,11 +653,18 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
--- Gaps
-beautiful.useless_gap = 5
-
 -- Set screen layout
 awful.spawn.with_shell("xrandr --output eDP --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output VGA-0 --off --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal")
 
 -- Set wallpaper
 awful.spawn.with_shell("nitrogen --set-tiled ~/.config/bg.png")
+
+-- Rounded window corners
+client.connect_signal("manage", function (c)
+    c.shape = function(cr,w,h)
+        gears.shape.rounded_rect(cr,w,h,10)
+    end
+end)
+
+-- Gaps
+beautiful.useless_gap = 2
