@@ -363,11 +363,11 @@ globalkeys = gears.table.join(
               {description = "restore minimized", group = "client"}),
 
     -- Prompt
-    awful.key({ "Control" }, "space", function () awful.util.spawn("rofi -show run") end,
+    awful.key({ modkey }, "r", function () awful.util.spawn("rofi -show run") end,
               {description = "run prompt", group = "launcher"}),
 
     -- Menubar
-    awful.key({	modkey }, "p", function() awful.util.spawn("rofi -show drun") end,
+    awful.key({ "Control" }, "space", function() awful.util.spawn("rofi -show drun") end,
               {description = "show the menubar", group = "launcher"}),
 
     -- Thunar 
