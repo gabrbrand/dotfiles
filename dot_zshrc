@@ -118,6 +118,7 @@ alias log="git log"
 alias pull="git pull"
 alias push="git push"
 alias status="git status"
+alias lg="lazygit"
 
 alias open="xdg-open"
 
