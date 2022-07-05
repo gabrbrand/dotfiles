@@ -124,6 +124,7 @@ alias open="xdg-open"
 alias cat="bat"
 alias ls="lsd"
 alias lt="ls --tree"
+alias df="duf"
 
 alias update="sudo dnf update && flatpak update && sudo dnf autoremove && sudo dnf clean all && flatpak uninstall --unused"
 
