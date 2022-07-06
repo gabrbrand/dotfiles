@@ -127,7 +127,7 @@ alias ls="lsd"
 alias lt="ls --tree"
 alias df="duf"
 
-alias update="sudo dnf update && flatpak update && sudo dnf autoremove && sudo dnf clean all && flatpak uninstall --unused"
+alias update="sudo dnf -y update && flatpak update && sudo dnf -y autoremove && sudo dnf clean all && flatpak uninstall --unused"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
