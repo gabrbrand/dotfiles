@@ -110,24 +110,24 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias add="git add --all"
-alias clone="git clone"
-alias commit="git commit -m"
-alias diff="git diff"
-alias log="git log"
-alias pull="git pull"
-alias push="git push"
-alias status="git status"
+alias gadd="git add --all"
+alias gclone="git clone"
+alias gcommit="git commit -m"
+alias gdiff="git diff"
+alias glog="git log"
+alias gpull="git pull"
+alias gpush="git push"
+alias gstatus="git status"
 alias lg="lazygit"
 
 alias open="xdg-open"
 
 alias cat="bat"
+alias df="duf"
 alias ls="lsd"
 alias lt="ls --tree"
-alias df="duf"
 
-alias update="sudo dnf -y update && flatpak update && sudo dnf -y autoremove && sudo dnf clean all && flatpak uninstall --unused"
+alias update="sudo dnf -y update && flatpak -y update && sudo dnf -y autoremove && sudo dnf -y clean all && flatpak -y uninstall --unused"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
