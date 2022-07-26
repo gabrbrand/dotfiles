@@ -133,3 +133,5 @@ alias update="sudo dnf -y update && flatpak -y update && sudo dnf -y autoremove 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH=$PATH:/home/gabriel/.spicetify
+
+bindkey -v
