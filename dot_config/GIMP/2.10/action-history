@@ -1,0 +1,14 @@
+# GIMP action-history
+
+(history-item "dockable-close-tab" 5)
+(history-item "edit-cut" 0)
+(history-item "edit-paste-as-new-image" 0)
+(history-item "edit-copy" 0)
+(history-item "edit-paste" 0)
+(history-item "edit-clear" 0)
+(history-item "select-all" 0)
+(history-item "file-save" 0)
+(history-item "file-quit" 0)
+(history-item "dialogs-preferences" 1)
+
+# end of action-history
