@@ -19,3 +19,5 @@ set encoding=utf8
 set number
 
 nnoremap <C-t> :NERDTreeToggle<CR>
+
+autocmd BufWritePost ~/.local/share/chezmoi/* ! chezmoi apply --source-path "%"
