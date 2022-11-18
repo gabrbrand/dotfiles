@@ -130,7 +130,7 @@ alias lt="ls --tree"
 alias update="sudo dnf -y update && flatpak -y update && sudo dnf -y autoremove && sudo dnf -y clean all && flatpak -y uninstall --unused"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 bindkey -v
 # eval "$(starship init zsh)"
