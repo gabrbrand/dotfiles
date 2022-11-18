@@ -134,3 +134,4 @@ alias update="sudo dnf -y update && flatpak -y update && sudo dnf -y autoremove 
 
 bindkey -v
 # eval "$(starship init zsh)"
+eval $(thefuck --alias)
